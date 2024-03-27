@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace test2.Views
+namespace EmployeeManagement.Views
 {
     /// <summary>
     /// Interaction logic for EmployeeView.xaml

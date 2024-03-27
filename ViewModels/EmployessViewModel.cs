@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
-using test2.Models; //import the Employee class from the Models namespace
-using test2.Commands; //import the RelayCommand class from the Commands namespace
+using EmployeeManagement.Models; //import the Employee class from the Models namespace
+using EmployeeManagement.Commands; //import the RelayCommand class from the Commands namespace
 using System.Collections.ObjectModel;
 
-namespace test2.ViewModels
+namespace EmployeeManagement.ViewModels
 {
     public class EmployessViewModel : INotifyPropertyChanged
     {
