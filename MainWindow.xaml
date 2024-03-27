@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:test2"
         xmlns:vw="clr-namespace:test2.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="525">
     <Grid>
         <vw:EmployeeView>
             

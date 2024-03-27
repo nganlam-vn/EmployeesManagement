@@ -28,18 +28,18 @@
         <TextBlock Text="Employee Name" Grid.Row="2" Grid.Column="0" FontWeight="DemiBold" Margin="5,8,5,8"/>
         <TextBlock Text="Employee Age" Grid.Row="3" Grid.Column="0" FontWeight="DemiBold" Margin="5,8,5,8"/>
 
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtEmpID" Margin="5,8,5,8" />
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtEmpName" Margin="5,8,5,8" />
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtEmpAge" Margin="5,8,5,8" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtEmpID" Margin="5,8,5,8" Text="{Binding Path= CurrentEmployee.Id, Mode=TwoWay}" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtEmpName" Margin="5,8,5,8" Text="{Binding Path= CurrentEmployee.Name, Mode=TwoWay}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtEmpAge" Margin="5,8,5,8" Text="{Binding Path= CurrentEmployee.Age, Mode=TwoWay}"/>
 
         <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" Margin="5,8,5,8">
-            <Button x:Name="btnAdd" Content="ADD" Margin="5,8,5,8"/>
-            <Button x:Name="btnUpdate" Content="UPDATE" Margin="5,8,5,8"/>
-            <Button x:Name="btnDelete" Content="DELETE" Margin="5,8,5,8"/>
-            <Button x:Name="btnSearch" Content="SEARCH" Margin="5,8,5,8"/>
+            <Button x:Name="btnAdd" Content="ADD" Margin="5,8,5,8" Command="{Binding Path=AddCommand}"/>
+            <Button x:Name="btnUpdate" Content="UPDATE" Margin="5,8,5,8" Command="{Binding Path=UpdateCommand}"/>
+            <Button x:Name="btnDelete" Content="DELETE" Margin="5,8,5,8" Command="{Binding Path=DeleteCommand}"/>
+            <Button x:Name="btnSearch" Content="SEARCH" Margin="5,8,5,8" Command="{Binding Path=SearchCommand}"/>
         </StackPanel>
-        <TextBlock x:Name="txtBlockMessage" Grid.Column="1" Grid.Row="5" Margin="5,8,5,8"/>
-        <DataGrid x:Name="dgEmployees" Grid.Column="1" Grid.Row="5" AutoGenerateColumns="False" Margin="5,8,5,8" ItemsSource="{Binding Path= EmployeesList}">
+        <TextBlock x:Name="txtBlockMessage" Grid.Column="1" Grid.Row="5" Margin="5,8,5,8" Text="{Binding Path= Message}"/>
+        <DataGrid x:Name="dgEmployees" Grid.Column="1" Grid.Row="6" AutoGenerateColumns="False" Margin="5,8,5,8" ItemsSource="{Binding Path= EmployeesList, Mode=TwoWay}">
             <DataGrid.Columns>
             <DataGridTextColumn Header="Employee ID" Width="auto" Binding="{Binding Path= Id}"/>
             <DataGridTextColumn Header="Employee Name" Width="auto" Binding="{Binding Path= Name}"/>
