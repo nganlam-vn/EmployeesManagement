@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input; //import the ICommand interface from the System.Windows.Input namespace
 
-namespace test2.Commands
+namespace EmployeeManagement.Commands
 {
     public class RelayCommand : ICommand //implement the ICommand interface
     {

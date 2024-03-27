@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel; //to interact with the INotifyPropertyChanged interface
 
-namespace test2.Models
+namespace EmployeeManagement.Models
 {
     public class Employee : INotifyPropertyChanged //implement the INotifyPropertyChanged interface
     { 

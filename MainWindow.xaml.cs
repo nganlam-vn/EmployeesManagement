@@ -8,9 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using test2.ViewModels; //import the EmployeesViewModel class from the ViewModels namespace
+using EmployeeManagement.ViewModels; //import the EmployeesViewModel class from the ViewModels namespace
 
-namespace test2
+namespace EmployeeManagement
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
